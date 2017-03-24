@@ -40,7 +40,9 @@ app.post('/picture/labels', (req, res) => {
       throw new Error(err);
     });
 });
-
+app.get('/test', (req,res)=>{
+  res.send('you hit that good server!')
+})
 
 app.listen(PORT, function() {
   console.log('HEY LISTEN', PORT);
