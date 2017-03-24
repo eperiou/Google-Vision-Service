@@ -46,4 +46,7 @@ app.get('/test', (req,res)=>{
 
 app.listen(PORT, function() {
   console.log('HEY LISTEN', PORT);
+  app.emit("appStarted");
 });
+
+module.exports = app;
